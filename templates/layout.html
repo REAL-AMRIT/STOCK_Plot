@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <title>AMRIT App</title>
+      <link rel="stylesheet" href="{{url_for('static',filename='css/main.css')}}">
+  </head>
+  <body>
+    <div class="container">
+        <header>
+            <h1 class="logo">Amrit's web app</h1>
+            <strong><nav>
+              <ul class="menu">
+                <li><a href="{{ url_for('home') }}">HOME</a></li>
+                <li><a href="{{ url_for('search') }}">SEARCH</a></li>
+              </ul>
+            </nav></strong>
+        </header>
+        {%block content%}
+        {%endblock%}
+    </div>
+  </body>
+</html>

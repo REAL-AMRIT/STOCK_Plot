@@ -1,0 +1,16 @@
+{% extends "layout.html" %}
+{% block content %}
+<div class="about">
+    <h1>My search page</h1>
+</div>
+<div class="container1">
+
+    <div class="email"> {{text | safe}} </div>
+    <form action="{{url_for('plot')}}" method="POST" target="_blank">
+      Please Select the Month and Year: <br> <input title="Select the Month and Year:" placeholder="Enter the Stock name" type="month" name="month" required> <br>
+      <input title="Stock Name" placeholder="Enter the Stock name" type="text" name="stock_name" required> <br>
+      <br> <button type="submit"> Submit </button>
+    </form>
+   
+</div>
+{% endblock %}

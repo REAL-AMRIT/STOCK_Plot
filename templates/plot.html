@@ -1,0 +1,24 @@
+{% extends "layout.html" %}
+{% block content %}
+
+<script type="text/javascript" src= {{cdn_js | safe}}></script>
+<div class="about">
+    <h1>My PLot page</h1>
+    <p>Candlestick chart</p>
+</div>
+
+<div class="output">
+  {{script1 | safe}}
+  {{div1 | safe}}
+</div>
+<br> <br> <br> <br><br>
+<div class="output">
+  {{text|safe}}
+  {% include btn ignore missing %}
+
+</div>
+
+<br> <br> <br> <br><br> <br> <br> <br>
+
+<h3>Thank you</h3>
+{% endblock %}
